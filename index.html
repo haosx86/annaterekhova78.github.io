@@ -1,12 +1,22 @@
 <!doctype html>
 <html lang="ru">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <title>Фреймы</title>
     <title>Anna terekhova first page</title>
     <meta name="author" content="Anna Terekhova">
     <mate http-equiv="expires" content="Tues, 14 May 2019 12:04:00 GMT">
     <meta name="description" content="Сайт об HTML и создании сайтов">
     <meta name="keywords" content="HTML, META, метатег, тег, поисковая система">
   </head>
+
+  <frameset rows="25%,75%">
+      <frame src="top.html" name="TOP" scrolling="no" noresize>
+      <frameset cols="100,*">
+        <frame src="menu.html" name="MENU">
+        <frame src="content.html" name="CONTENT">
+      </frameset>
+    </frameset>
 
     <body bgcolor="#fa8e47">
     <h1> Заголовок первого уровня </h1>
