@@ -90,7 +90,22 @@ header .menu li a {
 
 
 /* Services */
-
+.services .service {
+    width: 33.333333%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.services {
+    padding-top: 50px;
+    text-align: center;
+}
+.services .fa {
+    color: #979797;
+    margin-bottom: 15px; /* и добавим небольшой отступ */
+}
 
 
 /* Blog */
