@@ -64,7 +64,29 @@ header .menu li a {
     color: #aaa;
 }
 
-
+/*  Jumbotron */
+.jumbotron {
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 250px;
+    text-align: center;
+    clear: both;
+}
+.jumbotron .button {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 40px;
+    background-color: #fa5ba5;
+    padding: 20px 30px;
+    border-radius: 30px;
+}
 
 
 /* Services */
