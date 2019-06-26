@@ -16,7 +16,18 @@ p {
     color: #999;
     line-height: 1.6;
 }
-
+h1 {
+    font-size: 40px;
+    color: #fff;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 26px;
+}
+h2, h3 {
+    color: #282828;
 
 
 /* Header */
