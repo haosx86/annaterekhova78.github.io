@@ -130,5 +130,31 @@ header .menu li a {
 
 
 /* Footer */
+footer {
+    clear: both;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #38404b;
+}
+footer .brand {
+    color: #bcc9dd;
+}
+footer .menu li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer .menu li a {
+    color: #bcc9dd;
+}
+footer .menu {
+    display: inline-block;
+    margin-top: 30px; /* также добавим отступы */
+    margin-bottom: 15px;
+}
+footer .copyright {
+    font-size: 12px;
+    color: #eee;
+}
 
 
