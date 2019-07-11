@@ -42,3 +42,6 @@
     visibility: hidden;
     position: relative;
 }
+.photo:hover > a:after {
+    visibility: visible;
+}
