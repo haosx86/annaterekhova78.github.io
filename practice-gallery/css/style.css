@@ -22,3 +22,9 @@
     border: 10px solid #eee;
     box-sizing: border-box;
 }
+.photo a:hover {
+    opacity: 0.5;
+}
+.photo a {
+    display: block;
+}
