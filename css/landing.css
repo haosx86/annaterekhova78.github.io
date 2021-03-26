@@ -1,0 +1,13 @@
+.landing-container .card-img-right {
+    display: none !important;
+}
+
+@media (min-width: 900px) {
+    .landing-container .card-img-right {
+        display: block !important;
+    }
+}
+
+.divider {
+    margin: 3rem 0;
+}
