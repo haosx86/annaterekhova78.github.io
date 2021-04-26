@@ -2,6 +2,14 @@ html {
     font-size: 14px;
 }
 
+body {
+    background: #D3D3D3;
+}
+
+h3 {
+    background: #94DAC7;
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
