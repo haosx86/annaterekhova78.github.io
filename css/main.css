@@ -3,11 +3,7 @@ html {
 }
 
 body {
-    background: #D3D3D3;
-}
-
-h3 {
-    background: #94DAC7;
+    background: #f0f0f0;
 }
 
 @media (min-width: 768px) {
