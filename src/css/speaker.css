@@ -1,0 +1,37 @@
+.speaker {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.speaker:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.speaker__photo {
+  width: 200px;
+  height: 200px;
+  margin: 80px 20px 20px 20px;
+  border-radius: 50%;
+}
+
+.speaker__info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.speaker__name {
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #A7A7A7;
+}
+
+.speaker__bio {
+  font-family: Montserrat;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0 20px;
+}

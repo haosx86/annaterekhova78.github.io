@@ -1,0 +1,14 @@
+.section-headline {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ececec;
+  mix-blend-mode: luminosity;
+  text-transform: uppercase;
+  background: linear-gradient(92deg, #458EE4 0%, #6C34B5 100%);
+}
