@@ -1,8 +1,15 @@
+/* main page */
 @import "css/font.css";
 @import "css/global.css";
+@import "css/container.css";
 @import "css/header.css";
 @import "css/hero.css";
 @import "css/section-headline.css";
 @import "css/partners.css";
 @import "css/speakers-list.css";
 @import "css/speaker.css";
+
+
+/* Schedule */
+@import "css/schedule.css";
+@import "css/schedule-shadow.css";

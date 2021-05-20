@@ -1,16 +1,14 @@
 .partners {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60%;
+  row-gap: 80px;
   background: #000;
   padding: 75px 120px;
 }
 
 .partners__logo {
-  width: calc(50% - 200px);
+  width: 100%;
   height: auto;
-  min-width: 450px;
-  max-width: 600px;
 }
