@@ -2,10 +2,10 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 60%;
+  column-gap: 42%;
   row-gap: 80px;
   background: #000;
-  padding: 75px 120px;
+  padding: 50px 13%;
 }
 
 .partners__logo {
