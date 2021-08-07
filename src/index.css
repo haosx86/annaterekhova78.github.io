@@ -22,4 +22,10 @@
 @import "css/personal-page.css";
 
 /*Technologies*/
-@import "css/technologies.css"
+@import "css/technologies.css";
+
+/*Information*/
+@import "css/information.css";
+
+/*Social-buttons*/
+@import "css/social-buttons.css";
