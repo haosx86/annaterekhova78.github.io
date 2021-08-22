@@ -2,9 +2,10 @@
   "name": "annaterekhova78.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,13 @@
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-base": "^2.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^5.0.0",
+    "gulp-load-plugins": "^2.0.7",
     "gulp-minify-css": "^1.2.4",
+    "gulp-nunjucks": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-stylelint": "^13.0.0",
     "gulp-uglify": "^3.0.2"

@@ -1,5 +1,5 @@
 .technologies {
-  height: calc(100vh - 58px);
+  height: calc(~"100vh - 58px");
   width:  100%;
   display: flex;
   flex-direction: row;
@@ -17,10 +17,10 @@
       rgba(20,19,19,1) 0%,
       rgba(10,10,10,0) 0%,
       rgba(5,5,5,0) var(--gradient-positon),
-      rgba(5,5,5,0.88) calc(var(--gradient-positon) + 1%),
+      rgba(5,5,5,0.88) calc(~"var(--gradient-positon) + 1%"),
       rgba(0,0,0,0.88) 100%
     ),
-    url(../../img/technologies.png);
+    url("/img/technologies.png");
   background-size: cover;
   padding-top: 0;
 }
@@ -67,7 +67,7 @@
   --gradient-angle: 90deg;
   height: 70px;
   line-height: 70px;
-  max-width: calc(100% - 40px);
+  max-width: calc(~"100% - 40px");
   width: 250px;
   padding: 0 10px;
   text-align: center;
@@ -82,7 +82,7 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   letter-spacing: 1.5px;
-  transition-property: background;
+  transition-property: background-image;
   transition-timing-function: ease;
   transition-duration: 1s;
 }
