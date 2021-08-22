@@ -3,11 +3,11 @@
   flex-direction: row;
   max-width: 1300px;
   margin: 0 auto;
-  padding-top: 45px;
+  padding-top: 35px;
 }
 
 .information-page__text  {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 25px;
   letter-spacing: 0.005em;
   color: #333333;

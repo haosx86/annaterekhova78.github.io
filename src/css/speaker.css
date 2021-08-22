@@ -10,9 +10,9 @@
 
 .speaker__photo {
   width: 200px;
-  height: 200px;
+  height: 230px;
   margin: 80px 20px 20px 20px;
-  border-radius: 50%;
+  border-radius: 55%;
 }
 
 .speaker__info {
