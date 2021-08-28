@@ -1,31 +1,7 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <title> Дженсен Хуанг </title>
-    <link rel="stylesheet" href="src/index.css">
-  </head>
-  <body>
-    <header class="header">
-      <a href="index.html" class="header__logo">
-        ICTTW
-      </a>
-      <nav class="navigation">
-        <a class="navigation__link" href="about.html">О Проекте</a>
-        <a class="navigation__link" href="partners.html">Партнеры</a>
-        <a class="navigation__link" href="schedule.html">Расписание</a>
-        <a class="navigation__link" href="speakers.html">Спикеры</a>
-        <a class="navigation__link" href="technologies.html"> Для всех</a>
+{% extends "../particials/layout.njk" %}
 
-        <a href="#" class="navigation__lang-button">
-          <img
-            src="img/lang.png"
-            alt="Language selector"
-            class="navigation__lang-image">
-        </a>
-      </nav>
-    </header>
-
-    <div class="information-page">
+{% block content %}
+  <div class="information-page">
       <div class="information-page__col">
         <p class="information-page__text">
           Дженсен Хуанг родился 17 февраля 1963 . Дженсен -  американский предприниматель тайваньского происхождения, сооснователь, президент и главный исполнительный директор компании NVIDIA. 
@@ -59,7 +35,6 @@
       </div>
     <div class="information-page__col">
       <img src="img/Jensen Huang2.png" width="680px" height="500px" class="information-page__photo">
-      <img src="img/Jensen Huang3.png" width="680px" height="500px" class="information-page__photo">
       <div class="social-buttons">
         <a href="#"><img src="img/photo4.png" class="social-buttons__icon"></a>
         <a href="#"><img src="img/photo5.png" class="social-buttons__icon"></a>
@@ -67,5 +42,4 @@
       </div>
     </div>
     </div>
-  </body>
-</html>
+{% endblock %}

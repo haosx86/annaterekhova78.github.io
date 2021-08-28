@@ -17,9 +17,13 @@ function clean(cb) {
 function initBrowserSync() {
   browserSync.init({
     server: { baseDir: 'dist/' },
-    notify: true,
+    notify: false,
     online: true
   })
+
+  watch('./src/**/*.less', styles);
+  watch('./static/**/*', staticCopy);
+  watch('./src/**/*.+(html|njk)', njk);
 }
 
 function njk() {
@@ -42,26 +46,22 @@ function styles() {
 }
 
 function staticCopy() {
-  return src("./static/**/*")
+  return src('./static/**/*')
     .pipe(dest("./dist"))
     .pipe(browserSync.stream())
-}
-
-function startWatch() {
-  watch('./app/assets/scss/**/*.less', styles);
-  watch("./static/**/*", staticCopy);
-  watch("./src/**/*.+(html|njk)", njk);
 }
 
 exports.initBrowserSync = initBrowserSync
 exports.njk = njk
 exports.styles = styles
 exports.staticCopy = staticCopy
-exports.startWatch = startWatch
 exports.build = series(clean, parallel(njk, styles, staticCopy))
 exports.default = series(
   clean,
-  parallel(njk, styles, staticCopy),
-  initBrowserSync,
-  startWatch
+  parallel(
+    njk,
+    styles,
+    staticCopy
+  ),
+  initBrowserSync
 )

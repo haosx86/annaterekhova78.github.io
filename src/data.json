@@ -1,1 +1,12 @@
-{}
+{
+  "navigation": {
+    "index": {
+      "filename": "index.html",
+      "label": "Главная"
+    },
+    "about": {
+      "filename": "about.html",
+      "label": "О проекте"
+    }
+  }
+}
