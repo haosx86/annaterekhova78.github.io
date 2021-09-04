@@ -9,6 +9,7 @@
   align-items: center;
   padding-right: 40px;
   padding-left: 50px;
+  position: relative;
 
   &__logo {
     width: 200px;
@@ -17,6 +18,18 @@
     text-align: center;
     color: #ECECEC;
     mix-blend-mode: luminosity;
+  }
+
+  &__menu-button {
+    font-size: 18px;
+    text-transform: uppercase;
+    display: none;
+    color: #ddd;
+    font-weight: bold;
+
+    .mobile({
+      display: block;
+    });
   }
 }
 
