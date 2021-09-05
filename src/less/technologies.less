@@ -4,94 +4,94 @@
   display: flex;
   flex-direction: row;
   min-height: 600px;
-}
 
-.technologies__dark-col {
-  --gradient-positon: 45%;
-  --angle: 75deg;
-  height: 100%;
-  width: 70%;
-  background-image:
-    linear-gradient(
-      var(--angle),
-      rgba(20,19,19,1) 0%,
-      rgba(10,10,10,0) 0%,
-      rgba(5,5,5,0) var(--gradient-positon),
-      rgba(5,5,5,0.88) calc(~"var(--gradient-positon) + 1%"),
-      rgba(0,0,0,0.88) 100%
-    ),
-    url("/img/technologies.png");
-  background-size: cover;
-  padding-top: 0;
-}
+  &__dark-col {
+    --gradient-positon: 45%;
+    --angle: 75deg;
+    height: 100%;
+    width: 70%;
+    background-image:
+      linear-gradient(
+        var(--angle),
+        rgba(20,19,19,1) 0%,
+        rgba(10,10,10,0) 0%,
+        rgba(5,5,5,0) var(--gradient-positon),
+        rgba(5,5,5,0.88) calc(~"var(--gradient-positon) + 1%"),
+        rgba(0,0,0,0.88) 100%
+      ),
+      url("/img/technologies.webp");
+    background-size: cover;
+    padding-top: 0;
+  }
+  
+  &__light-col {
+    height: 100%;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, black, transparent);
+    background-size: 4px 100%;
+    background-repeat: no-repeat;
+  }
+  
+  &__text {
+    font-size: 60px;
+    mix-blend-mode: difference;
+    color: #ffffff;
+    --overlap: -30px;
 
-.technologies__light-col {
-  height: 100%;
-  width: 30%;
-  background-color: #f1f1f1;
-  padding-top: 150px;
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(90deg, black, transparent);
-  background-size: 4px 100%;
-  background-repeat: no-repeat;
-}
+    &_left {
+      text-align: right;
+      margin-right: var(--overlap);
+    }
+    
+    &_right {
+      text-align: left;
+      margin-left: var(--overlap);
+      margin-bottom: 10px
+    }
+    
+    &-line {
+      padding: 0 20px;
+      text-align: center;
+      font-size: 29px;
+      margin: 0;
+      font-weight: normal;
+    }
+  }
+  
+  &__button {
+    --gradient-angle: 90deg;
+    height: 70px;
+    line-height: 70px;
+    max-width: calc(~"100% - 40px");
+    width: 250px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px auto 40px auto;
+    color: #dadada;
+    background-image: linear-gradient(var(--gradient-angle), #316BAF 0%, #52268B 50%, #316BAF 100%);
+    background-size: 200% 100%;
+    background-position-x: 0%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    transition-property: background-image;
+    transition-timing-function: ease;
+    transition-duration: 1s;
 
-.technologies__text {
-  font-size: 60px;
-  mix-blend-mode: difference;
-  color: #ffffff;
-  --overlap: -30px;
-}
-
-.technologies__text_left {
-  text-align: right;
-  margin-right: var(--overlap);
-}
-
-.technologies__text_right {
-  text-align: left;
-  margin-left: var(--overlap);
-  margin-bottom: 10px
-}
-
-.technologies__text-line {
-  padding: 0 20px;
-  text-align: center;
-  font-size: 29px;
-  margin: 0;
-  font-weight: normal;
-}
-
-.technologies__button {
-  --gradient-angle: 90deg;
-  height: 70px;
-  line-height: 70px;
-  max-width: calc(~"100% - 40px");
-  width: 250px;
-  padding: 0 10px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 20px auto 40px auto;
-  color: #dadada;
-  background-image: linear-gradient(var(--gradient-angle), #316BAF 0%, #52268B 50%, #316BAF 100%);
-  background-size: 200% 100%;
-  background-position-x: 0%;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  letter-spacing: 1.5px;
-  transition-property: background-image;
-  transition-timing-function: ease;
-  transition-duration: 1s;
-}
-
-.technologies__button:hover {
-  opacity: 1;
-  background-position-x: 50%;
-}
-
-.technologies__spacer {
-  flex-grow: 1;
+    &:hover {
+      opacity: 1;
+      background-position-x: 50%;
+    }
+  }
+  
+  &__spacer {
+    flex-grow: 1;
+  }
 }
