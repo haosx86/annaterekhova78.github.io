@@ -25,7 +25,7 @@ function initBrowserSync() {
 
   watch('./src/**/*.less', styles);
   watch('./static/font/**/*', fontCopy);
-  watch('./static/img/**/*', convertImages);
+  watch('./static/img/**/*', imgCopy);
   watch('./src/**/*.+(html|njk)', njk);
 }
 
@@ -55,10 +55,16 @@ function fontCopy() {
     .pipe(browserSync.stream())
 }
 
-function convertImages() {
+function imgCopy() {
   return src('./static/img/**/*')
+    .pipe(dest("./dist/img"))
+    .pipe(browserSync.stream())
+}
+
+function convertImages() {
+  return src('./static/img_source/**/*')
   .pipe(cwebp())
-  .pipe(dest('./dist/img'))
+  .pipe(dest('./static/img'))
   .pipe(browserSync.stream())
 }
 
@@ -67,14 +73,15 @@ exports.njk = njk
 exports.styles = styles
 exports.fontCopy = fontCopy
 exports.convertImages = convertImages
-exports.build = series(clean, parallel(njk, styles, fontCopy, convertImages))
+exports.imgCopy = imgCopy
+exports.build = series(clean, parallel(njk, styles, fontCopy, imgCopy))
 exports.default = series(
   clean,
   parallel(
     njk,
     styles,
     fontCopy,
-    convertImages
+    imgCopy
   ),
   initBrowserSync
 )

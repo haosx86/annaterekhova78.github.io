@@ -1,8 +1,12 @@
 {% extends "../particials/layout.njk" %}
 
+{% block pageTitle %}
+  Расписание
+{% endblock %}
+
 {% block content %}
   <div class="schedule">
-    <div class="schedule-shadow"></div>
+    <div class="schedule-shadow desktop-only"></div>
     <div class="schedule__block">
       <h1 class="schedule__headline">
         Расписание
@@ -49,7 +53,6 @@
             Frankfurt OuterTheater Forum NaN - 21.06 14:30 UTC +3
           </p>
         </div>
-        <div class="schedule__cell"></div>
         <div class="schedule__cell">
           <p class = "schedule__line">
             Hideo Kodjima - Concept Art for 3D-artists
@@ -58,7 +61,6 @@
             Frankfurt OuterTheater Forum nullptr - 21.06 14:30 UTC +3
           </p>
         </div>
-        <div class="schedule__cell"></div>
         <div class="schedule__cell">
           <p class = "schedule__line">
             NVidia CUDA Optix Denoising Update
@@ -67,7 +69,6 @@
             Frankfurt OuterTheater Forum 2 - 22.06 17:00 UTC +3 
           </p>
         </div>
-        <div class="schedule__cell"></div>
         <div class="schedule__cell">
           <p class = "schedule__line">
             Andrew Melikhov - In-studio Fulltime Workflow
@@ -76,7 +77,6 @@
             Frankfurt OuterTheater Forum NULL - 21.06 14:30 UTC +3
           </p>
         </div>
-        <div class="schedule__cell"></div>
       </div>
     </div>
   </div>
