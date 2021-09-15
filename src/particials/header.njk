@@ -1,3 +1,16 @@
+{% macro lang_button() %}
+<a
+  href="{{ other_lang_prefix }}{{ current_page_path }}"
+  class="navigation__lang-button desktop-only"
+>
+  <img
+    src="/img/lang.webp"
+    alt="Language selector"
+    class="navigation__lang-image"
+  >
+</a>
+{% endmacro %}
+
 <header class="header">
   <a href="/" class="header__logo">
     ICTTW
@@ -8,18 +21,63 @@
   </a>
 
   <nav id="menu" class="navigation">
-    <a class="navigation__link" href="/partners">Партнеры</a>
-    <a class="navigation__link" href="/schedule">Расписание</a>
-    <a class="navigation__link" href="/speakers">Спикеры</a>
-
-    <a href="#" class="navigation__lang-button desktop-only">
-      <img
-        src="/img/lang.webp"
-        alt="Language selector"
-        class="navigation__lang-image"
+    {% if lang_prefix == "/en" %}
+      <a
+        class="navigation__link"
+        href="{{ lang_prefix }}/partners"
       >
-    </a>
+        Partners
+      </a>
+      <a
+        class="navigation__link"
+        href="{{ lang_prefix }}/schedule"
+      >
+        Schedule
+      </a>
+      <a
+        class="navigation__link"
+        href="{{ lang_prefix }}/speakers"
+      >
+        Speakers
+      </a>
 
-    <a class="navigation__link mobile-only" href="#">Закрыть меню</a>
+      {{ lang_button() }}
+
+      <a
+        class="navigation__link mobile-only"
+        href="#"
+      >
+        Close Menu
+      </a>
+    {% else %}
+      <a
+        class="navigation__link"
+        href="{{ lang_prefix }}/partners"
+      >
+        Партнеры
+      </a>
+      <a
+        class="navigation__link"
+        href="{{ lang_prefix }}/schedule"
+      >
+        Расписание
+      </a>
+      <a
+        class="navigation__link"
+        href="{{ lang_prefix }}/speakers"
+      >
+        Спикеры
+      </a>
+
+      {{ lang_button() }}
+
+      <a
+        class="navigation__link mobile-only"
+        href="#"
+      >
+        Закрыть меню
+      </a>
+    {% endif %}
+    
   </nav>
 </header>
