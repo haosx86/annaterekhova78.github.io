@@ -7,9 +7,14 @@
 {% set current_page_path = "/information.bill_gates" %}
 
 {% block content %}
-  <div class="information-page">
-    <div class="information-page__col">
-      <p class="information-page__text">
+ <div class="speakers-list">
+    <div class="speaker">
+      <img src="/img/Bill Gates.webp" alt="Bill Gates" class="speaker__photo" >
+       <div class="speaker__info">
+        <h3 id="a1" class="speaker__name">
+        <a href="/en/information.bill_gates">Bill Gates</a>
+        </h3>
+      <p class="speaker__bio">
       William Henry Gates III born October 28, 1955, Seattle, Washington, better known as Bill Gates is an American entrepreneur and public figure, philanthropist, one of the founders (together with Paul Allen)
       and the former largest shareholder of Microsoft. Until June 2008, he was the head of the company;
       after leaving the post, he remained as its non-executive chairman of the board of directors.
@@ -26,21 +31,14 @@
       Gates has 2 sisters: The eldest is Christy and the youngest is Libby. Gates studied at the most privileged school in Seattle, "Lakeside",
       where he was able to develop his programming skills on the school mini-computer
       </p>
-      <p class="information-page__text">
+      <p class="speaker__bio">
        Then I was fifteen or sixteen years old..." At the age of 17, Gates, Paul Allen and Paul Gilbert founded the company Traf-O-Data.
        The name was coined by Gates from "jack-o' - lantern " -a pumpkin lantern. The company's goal was to create meters for reading traffic
        and making reports for road engineers. The Traf-O-Data device was sold from 1972 to 1982.
        Gates and Allen earned $ 20,000 on this project. December 25, 1972 (Christmas) Bud Pembroke, the one who invited Bill and went to work for Information Service Inc.,
        I invited them to work for the company TRW. A large software project was being started for the Bonneville Power Department, where the PDP-10 was used.
       </p>
-    </div>
-    <div class="information-page__col">
-      <img src="/img/Bill Gates2.webp" width="680px" height="500px" class="information-page__photo">
-      <div class="social-buttons">
-        <a href="#"><img src="/img/photo4.webp" class="social-buttons__icon"></a>
-        <a href="#"><img src="/img/photo5.webp" class="social-buttons__icon"></a>
-        <a href="#"><img src="/img/photo6.webp" class="social-buttons__icon"></a>
       </div>
-    </div>
-  </div>
+      </div>
+      </div>
 {% endblock %}
